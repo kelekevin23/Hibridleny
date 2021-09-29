@@ -1,0 +1,239 @@
+@charset "UTF-8";
+body{
+    background-color: #ffd6ba;
+}
+main{
+    width: 80%;
+    margin:auto;
+    font-family: sans-serif;
+    background-color: #ffd6ba;
+    max-width: 1200px;
+}
+
+.head img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 25px;
+}
+
+.menu{
+    width:200px;
+    display:block;
+    position: absolute;
+    top:10%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    color:white;
+    border-radius: 25px;
+    padding:10px;
+    margin:15px;
+    background-color: #cb997e;
+    font-size: 18px;
+    text-shadow:1px 1px black;
+    text-align: center;
+}
+ul li{
+
+    display: none;
+    list-style-type: none;
+    text-align: left;
+    padding:10px;
+    font-size:15px;
+
+}
+
+.menu ul li:hover{
+    background: #76c893;
+}
+
+.center{
+    position: absolute;
+    top:5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color:#073b4c;
+    background-color: #cb997e;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+    border-radius: 25px;
+    color:white;
+    text-shadow:1px 1px black;
+}
+
+#osztalyok{
+    width: 25%;
+    padding:auto;
+}
+
+.osztalyok{
+    border:1px solid white;
+    border-radius: 25px;
+    padding:20px;
+    margin:20px auto;
+}
+
+.feher{
+    background-color:  white;
+}
+.feher:hover{
+    background: #76c893;
+}
+
+.szurke{
+    background-color: #e5e5e5;
+}
+.szurke:hover{
+    background: #76c893;
+}
+
+#tablazat{
+    width: 100%;
+    font-size: 18px;
+    margin:auto;
+
+}
+
+#tablazat td{
+    padding:10px;
+}
+
+#tablazat caption ,footer{
+    color:white;
+    text-align: left;
+    font-size: 20px;
+    padding:20px;
+    border : 1px solid white;
+    border-radius: 25px;
+    background-color: #cb997e;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-shadow:1px 1px black;
+}
+
+#nyomtat{
+    color:white;
+    border-radius: 25px;
+    padding:15px;
+    border:none;
+    margin:10px;
+    background-color: #cb997e;
+    font-size: 18px;
+    text-shadow:1px 1px black;
+}
+#osztalyok{
+    text-align: center;
+}
+
+#nyomtat:hover{
+    background: #76c893;
+
+}
+
+footer{
+    max-width: 100%;
+    margin-top: 0px;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 1555px) {
+
+    /*    _____________________ Grid areas ____________________*/
+    main {
+        display: grid;
+        grid-template-areas:
+            'h h h h h h h h h h h h'
+            'c c c c c c c c c c c c'
+            'm m m m m m m m m m m m'
+            'o o o o o o o o o o o o'
+            'f f f f f f f f f f f f';
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    .head {
+        grid-area: h;
+    }
+    .center {
+        grid-area: c;
+    }
+    #menuMover {
+        grid-area: m;
+    }
+    .osztalyok{
+        grid-area: o;
+    }
+    footer {
+        grid-area: f;
+    }
+
+    /*    _____________________________________________________*/
+    main{
+        width: 100%;
+        margin:auto;
+        font-family: sans-serif;
+        background-color: #ffd6ba;
+        max-width: 1200px;
+        padding-right: 5%;
+    }
+    .center{
+        width: 70%;
+        position: absolute;
+        top:3.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        color:#073b4c;
+        background-color: #cb997e;
+        padding:5px;
+        padding-left:20px;
+        padding-right:20px;
+        border-radius: 25px;
+        color:white;
+        text-shadow:1px 1px black;
+        text-align: center;
+    }
+    #menuMover{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding-top: 7%;
+    }
+    .menu{
+        width:100%;
+        position: relative;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:white;
+        border-radius: 25px;
+        padding:5px;
+        margin: 0px;
+        margin-top: 15px;
+        background-color: #cb997e;
+        font-size: 18px;
+        text-shadow:1px 1px black;
+        text-align: center;
+        margin-top: 18%;
+    }
+    #osztalyok{
+        width: fit-content;
+        padding:auto;
+    }
+
+    .osztalyok{
+        width: 96%;
+        border:1px solid white;
+        border-radius: 25px;
+        padding:5px;
+        text-align: center;
+        margin-right: auto;
+    }
+
+}

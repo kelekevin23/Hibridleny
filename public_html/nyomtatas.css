@@ -1,0 +1,12 @@
+@media print {
+    main {
+        visibility: hidden;
+        -webkit-print-color-adjust:exact;
+    }
+    #tablazat, .center{
+        visibility: visible;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+}
