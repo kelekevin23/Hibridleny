@@ -105,6 +105,7 @@ function tablazatFormazasok() {
 
 function tablazatKiir(tomb) {
     tablazatTorol();
+    szoveg = "";
     tomb.forEach((value, index) => {
         tablazatFeltolt(value, index);
     });
